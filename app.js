@@ -1,12 +1,11 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import client from '@mailchimp/mailchimp_marketing';
-import 'dotenv/config';
+const express = require('express');
+const bodyParser = require('body-parser');
+const client = require('@mailchimp/mailchimp_marketing');
+require('dotenv').config();
+// import 'dotenv/config';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 // const express = require('express');
 // const bodyParser = require('body-parser');
 // const request = require('request');
